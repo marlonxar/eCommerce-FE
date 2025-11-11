@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "tailwindcss";
+
+/* 👇 Aquí puedes definir tu tema (reemplaza con tus colores y fuentes) */
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --color-primary: #2563eb; /* azul-600 */
+  --color-secondary: #9333ea; /* morado-600 */
+  --color-background: #f9fafb;
+}
+
+/* 👇 Estilos globales opcionales */
+html,
+body {
+  height: 100%;
+  background-color: var(--color-background);
+  color: var(--color-gray-900);
+  font-family: var(--font-sans);
+}
+
+a {
+  @apply text-primary hover:underline;
+}
+
+/* 👇 Ejemplo de contenedor centrado */
+.container {
+  @apply mx-auto px-4;
+}
